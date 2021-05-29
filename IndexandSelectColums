@@ -1,0 +1,8 @@
+import pandas as pd
+persons = [ ('Vanessa', 18, 'Colombia') ,
+             ('Jorge', 5, 'Peru' ) ]
+             
+dim = pd.DataFrame(persons, index=['a', 'b'], columns = ['Nombre' , 'Edad', 'Pais'])
+
+col = dim.loc[ : , ['Nombre', 'Pais'] ]
+print(col)
